@@ -1,11 +1,10 @@
 import java.util.Comparator;
 import java.util.Random;
 
-/** An instance is a linked list.
- *
- * Note: Throughout, we refer to the values in this list as
- * this[0], this[1], this[2], etc.
- * @param <V>
+/** An instance is a linked list. This is a side project I did, simplifying the doubly linked
+ * list we made for assignment a3 (CS 2110, spring 2016) into a singly linked list. I did this because I was familiar 
+ * with the list data structure and wanted to be able to put my implementation of sorting 
+ * algorithms for the list structure on my github without concerns of academic integrity at Cornell. 
  */
 public class LL<V extends Comparable<V>> implements Comparator<V> {
 	private int size;  // number of values in the list.
@@ -357,7 +356,8 @@ public class LL<V extends Comparable<V>> implements Comparator<V> {
         return a.compareTo(b);
     }
     
-    /** An instance is a Node of this linked list. */
+    /** An instance is a Node of this linked list. Node class based on the Node
+     * class from assignment a3 in CS 2110. */
     /* package */ class Node {
         /** The value in this element. */
         /* package */ V value;
